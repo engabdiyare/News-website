@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="../js/script.js"></script> 
+</head>
+<body>
+    <header>
+        <h2 class="label">HELIWA TIMES</h2>
+        <div class="search" aria-placeholder="Hello">
+          <input type="text" name="" class="search input_searching" placeholder="What are you looking for?">
+          <div class="search_bar">
+            <p>Search</p>
+          </div>
+        </div>
+      </header>
+      <!-- Nav -->
+     <nav>
+        <a href="../index.html" class="navlist">Home</a>
+        <a href="../news pages/newspage.html" class="navlist">wararka</a>
+        <a href="../Sports pages/sports_page.html" class="navlist">Ciyaaraha</a>
+        <a href="../Technology pages/Technology.html" class="navlist">Tiknolojiyada</a>
+        <a href="../formpage/form.html" class="navlist">Contact</a>
+		</nav>
+      <div class="form">
+        <form name="contactForm" onsubmit="checkform()">
+           <h3 ondblclick="style.background='dodgerblue',style.color='white'">Feel Free To Contact Us</h3>
+
+           <label for="">Your Name</label>
+           <input type="text" name="name" id="" onfocus="myFunction(this)" onchange="change_function(this)"> 
+
+           <label for="">Your Email</label>
+           <input type="email" name="email"onfocus="myFunction(this)" onchange="change_function(this)" > 
+
+           <label for="">Subject</label>
+           <input type="text" name="subject"onfocus="myFunction(this)" onchange="change_function(this)"> 
+
+           <label for="">Your Message</label>
+           <textarea name="txt_area" id="" cols="30" rows="10"></textarea> 
+
+           <input type="submit" id="btn-submit" class="btn" value="Submit"> 
+       </form>
+    </div>
+
+<!-- Footer  -->
+<footer>
+    <div class="contact">
+      <h4>NAGALA SOO XARIIR</h4>
+      <div class="location">
+        <i class="fa-solid fa-location-dot"></i>
+      <H5>Mogadishu-Somalia</H5>
+    </div>
+    <div class="phone">
+      <i class="fa-solid fa-phone"></i>
+      <h5>0615688143</h5>
+    </div>
+  
+    </div>
+    <div class="display-news">
+      <h4>Bogagga Muhiimka ah</h4>
+      <a href="../Sports pages/sports_page.html">Ciyaaraha</a> <br>
+          <a href="../news pages/newspage.html">Wararka</a> <br>
+          <a href="../Technology pages/Technology.html"> Tiknolojiyada</a>
+    </div>
+    
+      <div class="getintouch">
+        <h4>Get in touch</h4>
+        <div class="social-media">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="subscribe">
+          <form action="">
+            <input type="text"  id="subscribe_input" placeholder="Enter Your Email?"> <br>
+            <input type="submit" id="submit" value="subscribe" onclick="subscribe()">
+          </form>
+        </div>
+  
+      </div>
+  </footer>
+
+
+
+
+    </body>
+</html>
